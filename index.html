@@ -5,20 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sesi 4 | Web Design HTML CSS Parallax | CUY UNIVERSITY</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Coffee Stay</title>
 </head>
 
 <body>
-    <div class="parallax intro">
-        <div class="cta">
-            <div class="title">
-                Hello I'am Rizal
+    <!-- navbar start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Coffee<span>Stay</span></a>
+
+        <div class=" navbar-nav">
+            <a href="#Home">Home</a>
+            <a href="#Menu">Menu</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+            </ul>
+        </div>
+
+        <div class=" navbar-extra">
+            <!-- <div class="middle">
+                <form class="search-box">
+                    <input type="search" class="input" name="search" placeholder="Search" />
+                    <button type="button" class="btn" name="button"></button>
+                </form>
+            </div> -->
+
+            <a href="#" id="search" class="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart" class="cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu" class="hamenu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section -->
+    <section class="hero" id="Home">
+        <main class="content">
+            <h1>Mari Nikamti Secangkir <span>Kopi</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, temporibus?</p>
+            <a href="#" class="cta">Beli Sekarang</a>
+        </main>
+    </section>
+    <!-- end hero section -->
+
+    <!-- about section -->
+    <section class="about" id="About">
+        <h2><span>About</span> Us</h2>
+
+        <div class="row">
+            <div class="about-img">
+                <img src="assets/img/2.jpg" alt="About Us">
+            </div>
+            <div class="content">
+                <h3>Kenapa memilih Kopi Kami?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nam accusamus dolorem quidem repellat
+                    at.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nesciunt, quasi cupiditate quod
+                    molestiae accusamus itaque aliquid facilis officiis quisquam.</p>
             </div>
         </div>
-    </div>
-    <div class="parallax content"></div>
-    <div class="parallax footer"></div>
+    </section>
+    <!-- end about section -->
+
+
+
+
+
+
+
+
+    <!-- feather icon -->
+    <script>
+        feather.replace()
+    </script>
+
+    <!--my script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
