@@ -5,29 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sesi 6 | Membuat Fake Bot | CUY UNIVERSITY</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Sesi 5 | Membuat Web Trailer Game ROBLOX | CUY UNIVERSITY</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .trailer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .intro {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'Gotham';
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .btn-pause {
+        border: none;
+        padding: 12px;
+        color: white;
+        background-color: black;
+        font-weight: 800;
+        margin-top: 20px;
+        width: 200px;
+        cursor: pointer;
+    }
+</style>
 
 <body>
+    <video autoplay loop muted id="trailer" class="trailer">
+        <source src="game_trailer.mp4" type="video/mp4">
+    </video>
 
-
-    <div class="container" id="container">
-        <div class="wrapper">
-            <div class="content">
-                <p id="pertanyaan"></p>
-                <div class="row">
-                    <input id="jawaban" type="text" placeholder="Silahkan Jawab">
-                    <button id="btn-send">SEND</button>
-                </div>
-            </div>
-        </div>
+    <div class="intro">
+        <img src="roblox-logo.png" alt="Logo Roblox" width="150" height="150">
+        <p>Roblox adalah permainan anak kecil yang sangan populer Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Voluptate, doloremque.</p>
+        <button id="btn-pause" class="btn-pause">PAUSE</button>
     </div>
 
-    <div class="loadders" id="loadders"></div>
+    <script>
+        let trailer = document.getElementById('trailer');
+        let btn = document.getElementById('btn-pause');
 
+        btn.addEventListener('click', function () {
+            // console.log('ok')
+            if (trailer.paused) {
+                // console.log('pause')
+                trailer.play()
+                btn.innerHTML = 'PAUSE';
+            } else {
+                trailer.pause()
+                btn.innerHTML = 'PLAY';
+            }
+        });
 
-    <script src=" script.js">
     </script>
 </body>
 
